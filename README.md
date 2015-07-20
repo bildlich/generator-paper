@@ -31,7 +31,7 @@ Gulp will now watch all .coffee files in `my-new-project/src` and transpile them
 
 ### What you'll get
 
-#### Where you'll work: /src folder
+#### Where you put your code: /src folder
 
 Check out `my-new-project/src`. It contains
 
@@ -42,7 +42,7 @@ Check out `my-new-project/src`. It contains
 
 Make sure you run `gulp` in the terminal as described above. Only when gulp is running the files from `src/` are properly processed and placed in `public/`.
 
-*  `index.html` is the same as in the `/src` folder but we magically inserted `<script>` tags for all our dependencies. For example, the much-needed paper.js library.
+*  `index.html` is the same as in the `/src` folder but we magically inserted `<script>` tags for all our dependencies. For example, the much-needed paper.js library. Open `index.html` in the browser to see your drawings.
 * `script.js` contains the transpiled JS from `script.coffee`.
 
 #### Customize your project
