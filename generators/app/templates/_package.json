@@ -1,0 +1,10 @@
+{
+  "name": "<%= projectName %>",
+  "version": "0.0.1",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-coffee": "latest",
+    "gulp-util": "latest",
+    "wiredep": "latest"
+  }
+}

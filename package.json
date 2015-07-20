@@ -1,0 +1,30 @@
+{
+  "name": "generator-paper",
+  "version": "0.0.1",
+  "description": "Yeoman generator to quickly set up a paper.js project. You'll write CoffeeScript, which is fun.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "bildlich/generator-paper",
+  "author": {
+    "name": "Matthias Gieselmann",
+    "email": "",
+    "url": "https://github.com/bildlich"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "coffeescript",
+    "paper.js",
+    "frontend",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.20",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
