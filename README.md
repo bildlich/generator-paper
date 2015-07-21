@@ -2,6 +2,10 @@
 
 A [Yeoman](http://yeoman.io) generator to quickly set up a [paper.js](http://paperjs.org/) project. You'll write CoffeeScript, which is fun.
 
+## What you'll get
+
+A folder where everything is set up so that you can start writing code for paper.js immediately. An html file, paper.js and CoffeeScript ready to go.
+
 ## Getting Started
 
 Install Yeoman:
@@ -29,16 +33,16 @@ gulp
 ```
 Gulp will now watch all .coffee files in `my-new-project/src` and transpile them to `my-new-project/public`.
 
-### What you'll get
+### How to use it
 
-#### Where you put your code: /src folder
+#### Write code in the `src/` folder
 
 Check out `my-new-project/src`. It contains
 
 *  `index.html` with a canvas element. Make markup changes here.
 * `script.coffee`: Put your drawing wizz here. Note that you can't use PaperScript. Instead, write plain CoffeeScript. It's not so different though. See [Using JavaScript directly](http://paperjs.org/tutorials/getting-started/using-javascript-directly/) in the Paper.js docs.
 
-#### Where you'll see your changes: /public folder
+#### Find your changes in the `public/` folder
 
 Make sure you run `gulp` in the terminal as described above. Only when gulp is running the files from `src/` are properly processed and placed in `public/`.
 
@@ -53,11 +57,13 @@ Bower is set up and ready. Use it to manage frontend dependencies. For instance,
 bower install jquery -save
 ```
 
-To automatically inject our new dependency in `index.html`, re-run
+To automatically inject our new dependency into `index.html`, re-run
 
 ```bash
 gulp
 ```
+
+This will add the appropriate `<script>` tag of your new dependency to `index.html`.
 
 ## License
 
