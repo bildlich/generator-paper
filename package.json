@@ -1,6 +1,6 @@
 {
   "name": "generator-paper",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Yeoman generator to quickly set up a paper.js project. You'll write CoffeeScript, which is fun.",
   "license": "MIT",
   "main": "app/index.js",
