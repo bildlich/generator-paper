@@ -2,6 +2,14 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var coffee = require('gulp-coffee');
 var wiredep = require('wiredep').stream;
+var sass = require('gulp-sass');
+
+// Transpile Sass
+gulp.task('sass', function () {
+  gulp.src('./src/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./public'));
+});
 
 // Transpile Coffee
 gulp.task('coffee', function() {
@@ -11,8 +19,9 @@ gulp.task('coffee', function() {
 });
 
 // Watch .coffee files for change
-gulp.task('watch', ['coffee'], function() {
+gulp.task('watch', ['coffee', 'sass'], function() {
   gulp.watch('./src/*.coffee', ['coffee']);
+  gulp.watch('./src/*.scss', ['sass']);
 });
 
 // Include bower components into html
@@ -26,4 +35,4 @@ gulp.task('bower', function () {
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'bower']);
+gulp.task('default', ['watch', 'bower', 'sass']);

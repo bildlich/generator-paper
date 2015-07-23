@@ -48,6 +48,10 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('src/script.coffee'),
         this.destinationPath('./src/script.coffee')
       );
+      this.fs.copyTpl(
+        this.templatePath('src/style.scss'),
+        this.destinationPath('./src/style.scss')
+      );
     },
   },
 
